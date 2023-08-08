@@ -1,0 +1,253 @@
+body{
+    background-color: rgb(255, 255, 224);
+    font-family: 'Dongle', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.first{
+    color: brown;
+    text-align: center;
+    text-shadow: 2px 2px 5px brown;
+
+}
+
+
+.m{
+  color: brown;  
+}
+
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: green;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .content .heading {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  
+  .content .para {
+    line-height: 1.5;
+  }
+  
+  .content .btn {
+    color: yellow;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(-45deg, brown 0%, brown 100% );
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(-45deg, brown 0%, brown 100% );
+    z-index: -1;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card:hover::before {
+    height: 100%;
+  }
+  
+  .card:hover {
+    box-shadow: none;
+  }
+  
+  .card:hover .btn {
+    color: #212121;
+    background: yellow;
+  }
+  
+  .content .btn:hover {
+    outline: 2px solid yellow;
+    background: transparent;
+    color: yellow;
+  }
+  
+  .content .btn:active {
+    box-shadow: none;
+  }
+
+
+
+  .ro{
+    width: 160px;
+  }
+
+
+  .gt{
+    height: 240px;
+    margin-left: 1300px;
+    margin-bottom: 200px;
+}
+
+
+
+.boe{
+    color: brown;
+}
+.god{
+    text-align: center;
+}
+.h2{
+    color: brown;
+}
+.war{
+    color: red;
+}
+.acount{
+    width: 400px;
+    height: 70px;
+    background-color: brown;
+    opacity: 80%;
+    border-radius: 70px 70px 70px 70px;
+-moz-border-radius: 70px 70px 70px 70px;
+-webkit-border-radius: 70px 70px 70px 70px;
+border: 0px inherit #ff00ff;
+-webkit-box-shadow: 18px 14px 51px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 18px 14px 51px 1px rgba(0,0,0,0.75);
+box-shadow: 18px 14px 51px 1px rgba(0,0,0,0.75);
+
+}
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+  }
+
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .contact-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .highlight {
+    background-color: yellow;
+    font-weight: bold;
+    padding: 2px;
+  }
+  .endi{
+    background-color: black;
+    height: 100px;
+    
+  }
+  .ara{
+    text-decoration: none;
+color: brown;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .overlay.active .modal {
+    transform: translateY(0);
+  }
+
+  .welcome-message {
+    display: none;
+    margin-top: 20px;
+  }
+
+  .overlay.active .welcome-message {
+    display: block;
+  }
+  .thin-line {
+    border: none;
+    border-top: 10px solid #8b7355;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .boook{
+    background-color: #8e7e6a;
+  }
+  .num5{
+    color: #7d5b4f;
+  }
+
+.num4 {
+color: #d3b8a3;
+}
+
+.num3 {
+ color: #a89e91 ;
+}
+
+.num2 {
+color: #c0ac92;
+}
+
+  .num1 {
+color: #e5d4c1;
+  }
